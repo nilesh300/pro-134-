@@ -1,11 +1,12 @@
-img = "";
+song = "";
 status = "";
 objects = [];
-song = "";
+
 
 function preload() {
-    song = loadSound("alarm.mp3");
+    song = loadSound("danger_zone.mp3");
 }
+
 
 
 function setup() {
@@ -21,7 +22,6 @@ function setup() {
 function modelLoaded() {
     console.log("Model Loaded!")
     status = true;
-    objectDetector.detect(video, gotResult);
 }
 
 function gotResult(error, results) {
